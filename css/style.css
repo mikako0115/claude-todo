@@ -45,3 +45,24 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   word-break: break-word;
 }
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-list li.done .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  padding: 4px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
